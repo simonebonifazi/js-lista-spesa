@@ -13,7 +13,6 @@ Affettati
 Formaggio
 Verdura
 Frutta
-Buon lavoro e a domani!
 */
 
 //steps
@@ -27,18 +26,28 @@ Buon lavoro e a domani!
 7.avvio il ciclo
 
 */
-//1.
+// //1.
 const listElements = ['uova', 'pane', 'latte', 'biscotti', 'pasta', 'affettati', 'formaggio', 'verdura', 'frutta '];
-//2. 
+// //2.
 const mainList = document.getElementById('shop-list');
-//3-4
+// //3-4
 let i = 0;
 let list = '';
-//5
-while (i < listElements.lenght) {
+// //5
+while (i < listElements.length) {
     list += `<li>${listElements[i]}</li>`;
+    console.log(list)
     //6
     i++;
-    mainList.innerHTML = list;
 }
+mainList.innerHTML = list;
 console.log(listElements)
+
+
+//************************ FOR***************************** */
+
+// for (let i = 0; i < listElements.length; i++) {
+//     list += `<li>${listElements[i]}</li>`;
+//     console.log(list)
+// }
+// mainList.innerHTML = list
